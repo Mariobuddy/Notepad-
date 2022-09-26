@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" type="text/css" href="./note.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Lato&family=Poppins&family=Roboto:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- font-family: 'Lato', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; -->
+<!-- font-family: 'Clicker Script', cursive; -->
+<script src="https://kit.fontawesome.com/c53c6c7bb6.js" crossorigin="anonymous"></script>
+<script  src="./note.js"></script>
+    
+</head>
+<body>
+<h1 id="h11">Notepad</h1>
+
+<div class="main_container">
+    <div class="flex">
+        <select class="selone" onclick="Change(this)" id="sel">
+            <option><label>Font Styles</label></option>
+            <option value="Arial">Arial</option>
+            <option value="Sans Serif">Sans Serif</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="Impact">Impact</option>
+            <option value="Bookman">Bookman</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Palatino">Palatino</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Montserrat">Montserrat</option>
+    
+    
+    
+        </select>
+    
+        <select class="no1" onclick="Size(this)" id="no1">
+            <option>Size</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+
+
+    
+        </select>
+    
+        <button class="bold" onclick="Bold(this)" id="lan">B</button>
+        <button class="italic" onclick="Italic(this)" id="son">I</button>
+        <button class="under" onclick="Under(this)" id="done">U</button>
+    <div class="text">
+        <textarea  placeholder="Type something here" rows="20" cols="100"  id="content"> </textarea>
+    </div>
+           
+    </div>
+    
+</div>
+
+<div class="tool" id="tat">
+  <button class="copy" onclick="Copy(this)">Copy</button>
+  <button class="restart" onclick="Restart(this)">Restart</button>
+  <button class="clear" onclick="Remove(this)">Clear</button>
+
+</div>
+</body>
+</html>
